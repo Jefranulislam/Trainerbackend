@@ -16,7 +16,7 @@ const { OpenAIApi, Configuration } = require("openai");
 
 const configuration = new Configuration({
     organization: process.env.ORGANIZATION_KEY,
-    apiKey: process.env.API_KEY,
+    apiKey: process.env.OPENAI_API_KEY,
     
 });
 app.use(express.static('public'));
