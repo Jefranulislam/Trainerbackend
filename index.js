@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 const { OpenAIApi, Configuration } = require("openai");
 
 const configuration = new Configuration({
-    organization: "org-icAJbvhjbF3H9f0j2yYPhz00",
-    apiKey: process.env.API,
+    organization: process.env.ORGANIZATION_KEY,
+    apiKey: process.env.API_KEY,
 });
 app.use(express.static('public'));
 const openai = new OpenAIApi(configuration);
