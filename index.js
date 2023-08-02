@@ -22,7 +22,7 @@ app.use(express.static('public'));
 const openai = new OpenAIApi(configuration);
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://healthyai-frontend.vercel.app/',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: ['Content-Type'],
   }));
